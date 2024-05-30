@@ -6,11 +6,13 @@ if (isset($_POST["submit"])) {
   $first_name = $_POST['first_name'];
   $last_name = $_POST['last_name'];
   $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $address = $_POST['address'];
   $sex = $_POST['sex'];
   $year = $_POST['year'];
   $course = $_POST['course'];
 
-  $sql = "UPDATE `crud` SET `first_name`='$first_name',`last_name`='$last_name',`email`='$email',`sex`='$sex', `year`='$year', `course`='$course' WHERE id = $id";
+  $sql = "UPDATE `crud` SET `first_name`='$first_name',`last_name`='$last_name',`email`='$email',`phone`='$phone',`sex`='$sex',`address`='$address', `year`='$year', `course`='$course' WHERE id = $id";
 
   $result = mysqli_query($conn, $sql);
 
@@ -105,28 +107,49 @@ if (isset($_POST["submit"])) {
           <input type="email" class="form-control" name="email" value="<?php echo $row['email'] ?>">
         </div>
 
-        <div class="form-group mb-3">
-          <label>Gender:</label>
-          &nbsp;
-          <input type="radio" class="form-check-input" name="sex" id="male" value="male" <?php echo ($row["sex"] == 'male') ? "checked" : ""; ?>>
-          <label for="male" class="form-input-label">Male</label>
-          &nbsp;
-          <input type="radio" class="form-check-input" name="sex" id="female" value="female" <?php echo ($row["sex"] == 'female') ? "checked" : ""; ?>>
-          <label for="female" class="form-input-label">Female</label>
-        </div>
-
-
-
         <div class="mb-3">
-          <label class="form-label">Year Level:</label>
-          <input type="year" class="form-control" name="year" value="<?php echo $row['year'] ?>">
-        </div>
+               <label class="form-label">Contact No.</label>
+               <input type="phone" class="form-control" name="phone" placeholder="09812366131">
+            </div>
 
-        <div class="mb-3">
-          <label class="form-label">Course:</label>
-          <input type="course" class="form-control" name="course" value="<?php echo $row['course'] ?>">
-        </div>
+            <div class="mb-3">
+               <label class="form-label">Address</label>
+               <input type="address" class="form-control" name="address" placeholder="Candon City">
+            </div>
 
+            <div class="mb-3">
+               <th>Year Level</th>
+          <td>
+            <select class="form-control input-sm" name="year" required>
+              <option value="1st Year" selected>1st Year</option>
+              <option value="2nd Year" selected>2nd Year</option>
+              <option value="3rd Year" selected>3rd Year</option>
+              <option value="4th Year" selected>4th Year</option>
+            </select>
+          </td>
+            </div>
+
+            <div class="mb-3">
+            <th>Course</th>
+            <td>
+            <select class="form-control input-sm" name="course" required>
+              <option value="BSHM" selected>BSHM</option>
+              <option value="BSTM" selected>BSTM</option>
+              <option value="BSIT" selected>BSIT</option>
+              <option value="BSE" selected>BSE</option>
+            </select>
+          </td>
+            </div>
+
+            <div class="form-group mb-3">
+               <label>Sex:</label>
+               &nbsp;
+               <input type="radio" class="form-check-input" name="sex" id="male" value="male">
+               <label for="male" class="form-input-label">Male</label>
+               &nbsp;
+               <input type="radio" class="form-check-input" name="sex" id="female" value="female">
+               <label for="female" class="form-input-label">Female</label>
+            </div>
         
 
         <div>
