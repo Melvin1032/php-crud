@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+.bglogo img {   
+  width: 100%;
+  height: 1100px;
+
+  
+}
+
+.islogo {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.islogo img {
+    width: 300px;
+   
+}
+
+.shape {
+    background-color: rgb(255, 255, 255);
+    width: 950px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.desp1title {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desp1title h1 {
+    font-size: 32px;
+    font-family: 'Cout';
+    text-align: center;
+}
+
+
+
+.desp1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desp1 h1 {
+    color: rgb(122, 122, 122);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.mind {
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.mind img {
+    width: 120px;
+    margin-top: 30%;
+
+}
+
+.vect {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vect img {
+    width: 400px;  
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    font-family: 'Cout';
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+    white-space: nowrap;
+
+}
+
+
+.signinshape {
+    background-color: #2b2b2b;
+    width: 35%;
+    height: 10%;
+    top: 82%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signinshape:hover {
+    background-color: #50505050; 
+}
+
+.signinshape:active {
+    background-color: #3f3f3f; 
+}
+
+.signinshape h1 {
+    font-size: 18px;
+    color: white;
+    text-align: center; 
+    margin-top: 3%; 
+    font-family: 'Cout';
+    cursor: pointer;
+}
+
+.contents {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+    display: flex;
+    align-items: center; 
+    
+    
+}
+
+.laptop img {
+    width: 1000px;
+    margin-right: 20px; 
+    right: 5%;
+    position: relative;
+    
+}
+
+.contents h1 {
+    font-family: 'Cout';
+    font-size: 40px;
+    bottom: 120px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.contents p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+    right: 30%;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    color: rgb(122, 122, 122);
+
+} 
+
+
+
+    
+@font-face {
+    font-family: 'Cout';
+    src: url(couture-bld.otf);
+}
+
+
+
+/* HEADER */
+.headershape h2{
+    position: absolute;
+    top: 370px;
+    color: #000000;
+    font-family: 'Cout';
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+
+
+.hlogo {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.hlogo img{
+    width: 280px;
+
+    
+}
+
+.t h2{
+    font-family: 'Cout';
+    color: #000000;
+    margin: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+/* INDEX FOOTER */
+
+
+ .footerI {
+    width: 100%;
+    height: 90px;
+    margin-top: auto;
+    position: relative;
+}
+
+.footer2I {
+    background-color: rgba(207, 207, 207, 0.904);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0%;
+}
+
+
+.footer3I p{
+ color: rgb(117, 117, 117);
+ margin: 0;
+ font-family: 'Calibri';
+ font-size: 18px;
+}
+
+.footer3I {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    bottom: -200px;
+
+}
+
+.footer2I img {
+     width: auto; 
+     height: 150px;
+     position: relative;
+     top: 25%;
+     left: 15%;
+     cursor: pointer;   
+}
+
+.abtI {
+    bottom: 30%;
+    left: 48%;
+    position: absolute;
+}
+
+.abtI h1 {
+    color: #000000;
+    font-family: 'Cout';
+    margin-bottom: 30px;
+    
+   
+}
+
+.abtI p {
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    margin-top: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cnctI {
+    bottom: 20%;
+     left: 70%;
+    position: absolute;
+}
+
+.cnctI h1{
+    color: #000000;
+    font-family: 'Cout';
+    margin-bottom: 30px;
+}
+
+.cnctI p{
+    color: rgb(49, 49, 49);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 15px;
+
+}
+    
+@font-face {
+    font-family: 'Cout';
+    src: url(couture-bld.otf);
+}
+
+
+
+
+.footerA {
+    width: 100%;
+    height: 90px;
+    margin-top: auto;
+    position: relative;
+}
+
+.footer2A {
+    background-color: rgba(207, 207, 207, 0.904);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 270%;
+}
+
+
+.footer3A p{
+ color: rgb(117, 117, 117);
+ margin: 0;
+ font-family: 'Calibri';
+ font-size: 18px;
+}
+
+.footer3A {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    bottom: -450px;
+
+}
+
+.footer2A img {
+     width: auto; 
+     height: 150px;
+     position: relative;
+     top: 25%;
+     left: 15%;
+     cursor: pointer;   
+}
+
+.abtA {
+    bottom: 30%;
+    left: 48%;
+    position: absolute;
+}
+
+.abtA h1 {
+    color: #000000;
+    font-family: 'Cout';
+    margin-bottom: 30px;
+    
+   
+}
+
+.abtA p {
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    margin-top: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cnctA {
+    bottom: 20%;
+     left: 70%;
+    position: absolute;
+}
+
+.cnctA h1{
+    color: #000000;
+    font-family: 'Cout';
+    margin-bottom: 30px;
+}
+
+.cnctA p{
+    color: rgb(49, 49, 49);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
